@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        input[type="number"] {
+            width: 100px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            font-size: 18px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #attempts {
+            margin-top: 10px;
+            color: #555;
+        }
+        #guessInput {
+            margin-bottom: 10px;
+        }
+        #resetButton {
+            background-color: #dc3545;
+        }
+        #resetButton:hover {
+            background-color: #c82333;
+        }
+        #guessInput, #result, #attempts {
+            display: block;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Number Guessing Game</h2>
+    <p>Guess a number between 1 and 10</p>
+
+    <input type="number" id="guessInput" min="1" max="10" />
+    <button onclick="checkGuess()">Guess</button>
+    <button onclick="resetGame()">Reset</button>
+
+    <p id="result"></p>
+    <p id="attempts"></p>
+
+     <script src="number.js "></script>
+</body>
+</html>
